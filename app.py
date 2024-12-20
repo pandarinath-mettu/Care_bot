@@ -57,7 +57,7 @@ counter = 0
 
 def main():
     global counter
-    st.title("MediBot")
+    st.title("Care Bot")
     st.write("**Medicine Information Chatbot**")
 
     menu = ["Home", "Conversation History", "About"]
@@ -65,15 +65,15 @@ def main():
 
     if choice == "Home":
         st.write("""
-Welcome to **MediBot**! I'm your friendly neighborhood chatbot with a brain full of medicine knowledge. Need some quick info about your meds? Just ask away! 
+Welcome to **CareBot**! I'm your friendly neighborhood chatbot with a heart full of health knowledge. Have questions about your medications? I’m here to help!  
 
-I can help you with details like:
+I can assist you with:  
 
-- **Usage** – What’s this medicine for?
-- **Side effects** – What could go wrong? (But don’t worry, I’ll keep it light!)
-- **Dosage** – How much should you take? (No need for math – I’ve got you covered!)
+- **Usage** – What’s this medication for?  
+- **Side Effects** – What might happen? (Don’t worry, I’ll keep it simple!)  
+- **Dosage** – How much should you take? (No calculators needed – I’ve got it handled!)  
 
-Please provide the exact medication name. For more help, check the 'About' section.
+Just share the exact name of the medication, and I’ll do the rest. For additional info, check out the 'About' section.  
 """)
 
         if not os.path.exists('chat_log.csv'):
